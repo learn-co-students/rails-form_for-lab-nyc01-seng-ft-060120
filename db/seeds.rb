@@ -5,3 +5,19 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+SchoolClass.destroy_all
+Student.destroy_all
+
+SchoolClass.create(title: Faker::Company.name, room_number: rand(0..100))
+SchoolClass.create(title: Faker::Company.name, room_number: rand(0..100))
+SchoolClass.create(title: Faker::Company.name, room_number: rand(0..100))
+SchoolClass.create(title: Faker::Company.name, room_number: rand(0..100))
+SchoolClass.create(title: Faker::Company.name, room_number: rand(0..100))
+
+
+Student.create(first_name:Faker::Name.first_name, last_name:Faker::Name.last_name)
+Student.create(first_name:Faker::Name.first_name, last_name:Faker::Name.last_name)
+Student.create(first_name:Faker::Name.first_name, last_name:Faker::Name.last_name)
+Student.create(first_name:Faker::Name.first_name, last_name:Faker::Name.last_name)
+Student.create(first_name:Faker::Name.first_name, last_name:Faker::Name.last_name)
+Student.create(first_name:Faker::Name.first_name, last_name:Faker::Name.last_name)
