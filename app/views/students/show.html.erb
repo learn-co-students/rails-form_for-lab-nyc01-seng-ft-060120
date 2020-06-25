@@ -1,0 +1,7 @@
+<h1> Students</h1>
+
+<%= @student.first_name %> 
+<%= @student.last_name %>
+
+<%= button_to("Edit Student Information", edit_student_path(@student), method: :get) %>
+<%= button_to("Delete Student", @student, method: :delete)%>
