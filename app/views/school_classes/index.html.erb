@@ -1,0 +1,8 @@
+<h1>Classes Index</h1>
+
+<%= link_to "Crete a New Class", new_school_class_path%>
+<hr>
+
+<% @school_classes.each do |s|%>
+<p><%= link_to s.title, school_class_path(s)%></p>
+<%end%>
